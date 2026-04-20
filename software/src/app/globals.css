@@ -1,0 +1,77 @@
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sen-regular {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+.sen-medium {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+.sen-semibold {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+.sen-bold {
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+}
+
+:root {
+  --background: #faf7f8;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: theme("fontFamily.sans");
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

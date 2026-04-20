@@ -1,0 +1,8 @@
+[
+  {
+    "lat": 13,
+    "lng": 100,
+    "name": "Test API Fire Location",
+    "severity": "fire"
+  }
+]
